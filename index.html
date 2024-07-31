@@ -1,0 +1,212 @@
+<html>
+<header>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+  <title>test</title>
+</header>
+
+<body>
+  <main class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-left">
+          <li><a href="#">
+              <div><i class="bi bi-arrow-down-square custom-icon"></i></div>导入
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-arrow-up-square custom-icon"></i></div>导出
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-arrow-left-square custom-icon"></i></div>撤销
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-arrow-counterclockwise custom-icon"></i></div>重做
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-caret-left-square custom-icon"></i></div>预览
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-save custom-icon"></i></div>保存
+            </a></li>
+          <li><a href="#">
+              <div><i class="bi bi-bag custom-icon"></i></div>清空
+            </a></li>
+          <div class="navbar__right">
+            <form action="/search" method="get">
+              <input type="text" name="query" placeholder="请输入APP名称" required>
+            </form>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row  col-md-1">
+      <nav class="navbar navbar-default navtab">
+        <div class="container-fluid">
+          <div class="tab">组件库</div>
+          <div class="tab">组件预览器</div>
+        </div>
+      </nav>
+    </div>
+    <div class="accordion col-lg-2">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h4>基本组件</h4>
+        </div>
+        <div class="accordion-content">
+          <p>
+          <div class=" button-container">
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>文字</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>上传 </p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p> 按钮</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>单选按钮组</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p> 多选框组</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>下拉框</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>输入框</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>文本域</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p> 微调器</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p> 日期选择框</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>滑块</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p> 图片</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>树形</p>
+            </button>
+            <button class="my-button">
+              <i class="bi bi-filetype-html"></i>
+              <p>表格</p>
+            </button>
+          </div>
+        </div>
+        </p>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h4>容器组件</h4>
+        </div>
+        <div class="accordion-content">
+          <p>这是第二项的内容。</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="tabs2">
+          <button class="tab2 active">设计视图</button>
+          <button class="tab2">代码视图</button>
+        </div>
+
+        <div class="full-container panel panel-default">
+
+          <div class="grid-line horizontal" style="top: 50px;"></div>
+          <div class="grid-line horizontal" style="top: 100px;"></div>
+          <div class="grid-line horizontal" style="top: 150px;"></div>
+          <div class="grid-line horizontal" style="top: 200px;"></div>
+          <div class="grid-line horizontal" style="top: 250px;"></div>
+          <div class="grid-line horizontal" style="top: 300px;"></div>
+
+          <!-- 创建多个垂直坐标线 -->
+          <div class="grid-line vertical" style="left: 50px;"></div>
+          <div class="grid-line vertical" style="left: 100px;"></div>
+          <div class="grid-line vertical" style="left: 150px;"></div>
+          <div class="grid-line vertical" style="left: 200px;"></div>
+          <div class="grid-line vertical" style="left: 250px;"></div>
+          <div class="grid-line vertical" style="left: 300px;"></div>
+        </div>
+
+
+      </div>
+      <div class="accordion col-md-1">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h4>通用样式</h4>
+          </div>
+          <div class="accordion-content">
+            <p>这是第一项的内容。</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h4>组件联动</h4>
+          </div>
+          <div class="accordion-content">
+            <p>这是第二项的内容。</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h4>定制属性</h4>
+          </div>
+          <div class="accordion-content">
+            <p>HTML内容</p>
+            <form>
+              <input type="text" id="textInput" name="textInput" placeholder="在此输入内容">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <nav class="navbar navbar-default navtab">
+          <div class="container-fluid">
+            <div class="tab">属性</div>
+            <div class="tab">动画</div>
+            <div class="tab">事件</div>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; Can Chen 2024</p>
+    </footer>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
